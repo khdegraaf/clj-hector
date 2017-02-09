@@ -53,8 +53,7 @@
                 :column-families [{:name "a"}
                                   {:name "b"
                                    :comparator :long}]
-                :strategy-options {"foo" "bar"
-                                   "replication_factor" "1"}}]
+                :strategy-options {"replication_factor" "1"}}]
     (with-test-cluster cluster
       (add-keyspace cluster
                     ks-def)

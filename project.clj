@@ -1,10 +1,12 @@
-(defproject org.clojars.paul/clj-hector "0.3.2" 
-  :dependencies [[org.hectorclient/hector-core "1.1-2"]
+(defproject org.clojars.paul/clj-hector "0.3.3"
+  :dependencies [[org.hectorclient/hector-core "2.0-0"]
                  [org.slf4j/slf4j-api "1.7.5"]
-                 [org.clojure/clojure "1.4.0"]
+                 [org.clojure/clojure "1.8.0"]
                  [joda-time/joda-time "2.0"]]
   :profiles {:dev {:dependencies [[org.slf4j/slf4j-simple "1.7.5"]
-                                  [org.apache.cassandra/cassandra-all "1.1.6"]]}}
+                                  [org.apache.cassandra/cassandra-all "2.0.16"]
+                                  [com.google.guava/guava "15.0"]
+                                  ]}}
   :exclusions [org.slf4j/slf4j-log4j12]
   :resource-paths ["test/resources"]
   :min-lein-version "2.0.0"
